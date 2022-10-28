@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Budgeto</title>
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <nav>
-      <h1>Budgeto</h1>
+    <nav class="navbar">
+      <h2>Budgeto</h2>
       <ul class="nav nav-links">
         <li>Home</li>
         <li>Help</li>
@@ -17,9 +18,32 @@
         <li>Contact Us</li>
       </ul>
     </nav>
-
-    <h1>Budgeto</h1>
-    <h2>Welcome to Budgeto</h2>
-    <script src="app.js"></script>
+    <section class="introduction">
+      <h1>Budgeto the dynamic calculator that listens to you</h1>
+      <p>
+        With Budgeto you can define your fixed expenses i.e Car payments,
+        Mortgage, Rent, Utilities. Simultaneously, determining HOW much you want
+        to save by your chosen date, and we will automatically do all the boring
+        and tedious calculations for you. Budgeto will automatically determine
+        how much to save weekly, monthly, quarterly, and yearly to reach that
+        goal.
+      </p>
+    </section>
+    <section class="form budget-form">
+      <!-- update action and method later -->
+      <form action="#" method="POST">
+        <div class="input">
+          <p>Fixed Costs (+ to add more)</p>
+          <label for="fixed-cost"> Car </label>
+          <input
+            type="number"
+            name="fixed-cost"
+            id="fixed-cost"
+            placeholder="$460"
+          />
+          <span><button type="button" class="add-expense">+</button></span>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
